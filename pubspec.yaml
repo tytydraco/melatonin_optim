@@ -1,0 +1,21 @@
+name: melatonin_optim
+description: Calculate the optimal melatonin dosage for maximal phase advancement.
+version: 1.0.0+1
+repository: https://github.com/tytydraco/melatonin_optim
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.1.11
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: any
+
+flutter:
+  uses-material-design: true
