@@ -1,0 +1,11 @@
+basil:
+  get:
+    cmds: [ 'flutter pub get' ]
+  build:
+    cmds:
+      - 'flutter build web --release --web-renderer html'
+  publish:
+    cmds:
+      - 'git add -f build/web/'
+      - 'bash -c "git commit -sam \"Build web: $(date)\""'
+      - 'git push'
