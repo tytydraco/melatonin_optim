@@ -3,7 +3,7 @@ basil:
     cmds: [ 'flutter pub get' ]
   build:
     cmds:
-      - 'flutter build web --release --web-renderer html'
+      - 'flutter build web --release --web-renderer html --base-href "/melatonin_optim/build/web/"'
   publish:
     cmds:
       - 'git add -f build/web/'
